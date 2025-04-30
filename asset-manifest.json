@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bank-statement-generator/static/css/main.f855e6bc.css",
-    "main.js": "/bank-statement-generator/static/js/main.fb6bf925.js",
-    "static/js/977.a27ebc6f.chunk.js": "/bank-statement-generator/static/js/977.a27ebc6f.chunk.js",
-    "static/js/732.6fbdb016.chunk.js": "/bank-statement-generator/static/js/732.6fbdb016.chunk.js",
-    "static/js/453.563d235c.chunk.js": "/bank-statement-generator/static/js/453.563d235c.chunk.js",
-    "index.html": "/bank-statement-generator/index.html",
-    "main.f855e6bc.css.map": "/bank-statement-generator/static/css/main.f855e6bc.css.map",
-    "main.fb6bf925.js.map": "/bank-statement-generator/static/js/main.fb6bf925.js.map",
-    "977.a27ebc6f.chunk.js.map": "/bank-statement-generator/static/js/977.a27ebc6f.chunk.js.map",
-    "732.6fbdb016.chunk.js.map": "/bank-statement-generator/static/js/732.6fbdb016.chunk.js.map",
-    "453.563d235c.chunk.js.map": "/bank-statement-generator/static/js/453.563d235c.chunk.js.map"
+    "main.css": "/Bank-Statement-Generator/static/css/main.f855e6bc.css",
+    "main.js": "/Bank-Statement-Generator/static/js/main.c0a65705.js",
+    "static/js/977.a27ebc6f.chunk.js": "/Bank-Statement-Generator/static/js/977.a27ebc6f.chunk.js",
+    "static/js/732.6fbdb016.chunk.js": "/Bank-Statement-Generator/static/js/732.6fbdb016.chunk.js",
+    "static/js/453.563d235c.chunk.js": "/Bank-Statement-Generator/static/js/453.563d235c.chunk.js",
+    "index.html": "/Bank-Statement-Generator/index.html",
+    "main.f855e6bc.css.map": "/Bank-Statement-Generator/static/css/main.f855e6bc.css.map",
+    "main.c0a65705.js.map": "/Bank-Statement-Generator/static/js/main.c0a65705.js.map",
+    "977.a27ebc6f.chunk.js.map": "/Bank-Statement-Generator/static/js/977.a27ebc6f.chunk.js.map",
+    "732.6fbdb016.chunk.js.map": "/Bank-Statement-Generator/static/js/732.6fbdb016.chunk.js.map",
+    "453.563d235c.chunk.js.map": "/Bank-Statement-Generator/static/js/453.563d235c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.fb6bf925.js"
+    "static/js/main.c0a65705.js"
   ]
 }
