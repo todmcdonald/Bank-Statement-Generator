@@ -1,7 +1,5 @@
-/* Styling for bank checks */
-
-/* Check header */
-div:nth-of-type(1):has(+ div > div:nth-child(1)[style*="border-radius:50%"]) {
+/* check-styles.css - Simplified version with class-based selectors */
+.check-header {
   background-color: #f3f4f6;
   padding: 0.75rem;
   border-radius: 0.375rem 0.375rem 0 0;
@@ -11,8 +9,7 @@ div:nth-of-type(1):has(+ div > div:nth-child(1)[style*="border-radius:50%"]) {
   margin-top: 1rem;
 }
 
-/* Check container */
-div:has(> div:nth-child(1)[style*="border-radius:50%"]) {
+.check-container {
   border: 1px solid #d1d5db;
   border-radius: 0 0 0.375rem 0.375rem;
   background-color: #eff6ff;
@@ -23,32 +20,29 @@ div:has(> div:nth-child(1)[style*="border-radius:50%"]) {
   height: 280px;
 }
 
-/* "Cleared Checks" heading */
-div:contains("Cleared Checks") {
+.check-title {
   font-size: 1.25rem;
   font-weight: bold;
   margin: 1.5rem 0 1rem 0;
   color: #1e40af;
 }
 
-/* Circle with initial */
-div > div:nth-child(1)[style*="border-radius:50%"] {
-  width: 40px !important;
-  height: 40px !important;
-  background-color: #2563eb !important;
-  color: white !important;
-  font-weight: bold !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  position: absolute !important;
-  top: 1rem !important;
-  left: 1rem !important;
+.check-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
-/* Account holder name */
-div > div:nth-child(2):contains("John Smith") {
+.account-holder {
   position: absolute;
   top: 1rem;
   left: 4rem;
@@ -56,39 +50,29 @@ div > div:nth-child(2):contains("John Smith") {
   color: #1d4ed8;
 }
 
-/* Hide bank name */
-div > div:nth-child(3):contains("Demo Bank") {
-  display: none;
-}
-
-/* Check number */
-div > div:nth-child(4):matches(/^\d{6}$/) {
+.check-number {
   position: absolute;
   top: 1rem;
   right: 1rem;
   font-weight: bold;
 }
 
-/* Style date */
-div > div:nth-child(1):matches(/^\d{1,2}\/\d{1,2}\/\d{4}$/) {
+.check-date {
   position: absolute;
   top: 3rem;
   right: 7rem;
   text-align: right;
 }
 
-/* Add date line */
-div > div:nth-child(1):matches(/^\d{1,2}\/\d{1,2}\/\d{4}$/):after {
+.check-date:after {
   content: "";
-  position: absolute;
-  top: 1.5em;
-  left: 0;
+  display: block;
+  margin-top: 0.25rem;
   width: 100%;
   border-bottom: 2px solid black;
 }
 
-/* PAY TO THE */
-div > div:contains("PAY TO THE") {
+.pay-label {
   position: absolute;
   top: 6rem;
   left: 1rem;
@@ -96,8 +80,7 @@ div > div:contains("PAY TO THE") {
   font-size: 0.875rem;
 }
 
-/* ORDER OF */
-div > div:contains("ORDER OF") {
+.order-label {
   position: absolute;
   top: 7rem;
   left: 1rem;
@@ -105,8 +88,7 @@ div > div:contains("ORDER OF") {
   font-size: 0.875rem;
 }
 
-/* Payee name */
-div > div:nth-child(n+7):not(:contains("DOLLARS")):not(:contains("MEMO")):not(:contains("Authorized")) {
+.payee-name {
   position: absolute;
   top: 6rem;
   left: 7rem;
@@ -116,8 +98,7 @@ div > div:nth-child(n+7):not(:contains("DOLLARS")):not(:contains("MEMO")):not(:c
   font-weight: 500;
 }
 
-/* Amount */
-div > div:contains("$ **") {
+.amount-box {
   position: absolute;
   top: 6rem;
   right: 1rem;
@@ -126,8 +107,7 @@ div > div:contains("$ **") {
   font-weight: bold;
 }
 
-/* Amount in words */
-div > div:contains("hundred"):contains("/100") {
+.amount-words {
   position: absolute;
   top: 9rem;
   left: 1rem;
@@ -136,24 +116,21 @@ div > div:contains("hundred"):contains("/100") {
   padding-bottom: 0.25rem;
 }
 
-/* DOLLARS */
-div > div:contains("DOLLARS") {
+.dollars-label {
   position: absolute;
   top: 10.5rem;
   left: 1rem;
   font-size: 0.75rem;
 }
 
-/* MEMO */
-div > div:contains("MEMO") {
+.memo-label {
   position: absolute;
   bottom: 5rem;
   left: 1rem;
   font-size: 0.75rem;
 }
 
-/* Memo content */
-div > div:contains("Invoice #") {
+.memo-content {
   position: absolute;
   bottom: 5rem;
   left: 3.5rem;
@@ -162,8 +139,7 @@ div > div:contains("Invoice #") {
   padding-bottom: 0.25rem;
 }
 
-/* Authorized Signature */
-div > div:contains("Authorized Signature") {
+.signature-label {
   position: absolute;
   bottom: 5rem;
   right: 1rem;
@@ -171,8 +147,7 @@ div > div:contains("Authorized Signature") {
   text-align: right;
 }
 
-/* Signature */
-div > div:contains("Authorized Signature") + div {
+.signature {
   position: absolute;
   bottom: 4.5rem;
   right: 1rem;
@@ -183,17 +158,11 @@ div > div:contains("Authorized Signature") + div {
   font-style: italic;
 }
 
-/* MICR line */
-div > div:contains("⑆123456789⑆") {
+.micr-line {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
   width: calc(100% - 2rem);
   font-family: 'Courier New', monospace;
   font-size: 0.9rem;
-}
-
-/* Check display */
-div:has(div:contains("PAY TO THE")) + div {
-  display: none;
 }
